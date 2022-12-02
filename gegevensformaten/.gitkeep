@@ -1,0 +1,141 @@
+markdown: 
+Markdown is a lightweight mark up language used for simple and easy convesrion to html. it is based on flat text and is used for 
+creating simple pages with basic text formating meant to be easily read.
+
+#### The quarterly results look great!
+
+- Revenue was off the chart.
+- Profits were higher than ever.
+
+*Everything* is going according to **plan**.
+
+this createsa larger tilte followed by a list of the next two lines. The last line puts verything in italics and plan in bold
+
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+this creates a table with the top lines apearing as bold description on the left top corner of the table.
+
+
+json:
+JSON uses human-readable text in the form of data objects consisting of one or more attributes with associated values. It is mainly used for data exchange between server and web application
+
+[
+	{
+		color: "red",
+		value: "#f00"
+	},
+	{
+		color: "green",
+		value: "#0f0"
+	},
+	{
+		color: "blue",
+		value: "#00f"
+	},
+	{
+		color: "cyan",
+		value: "#0ff"
+	},
+	{
+		color: "magenta",
+		value: "#f0f"
+	},
+	{
+		color: "yellow",
+		value: "#ff0"
+	},
+	{
+		color: "black",
+		value: "#000"
+	}
+]
+creates an array of colors together with ther respective hex codes
+
+{ "name"   : "Alice Brown",
+  "sku"    : "54321",
+  "price"  : 199.95,
+ "shipTo" : { "name" : "Bob Brown",
+               "address" : "456 Oak Lane",
+               "city" : "Pretendville",
+               "state" : "HI",
+               "zip"   : "98999" },
+  "billTo" : { "name" : "Alice Brown",
+               "address" : "456 Oak Lane",
+               "city" : "Pretendville",
+               "state" : "HI",
+               "zip"   : "98999" }
+}
+creates a compound object composed ofname, sku, price, shipto, billto. with the last two objects consiting of multiple objects themselves.
+
+
+xml:
+xml is a standerdised data format usually used for data transfer between systems. It mainly differs from html in that is used for storing data as structured information instead of for representing content.
+
+<bookstore>  
+  <book category="COOKING">  
+    <title lang="en">Everyday Italian</title>  
+    <author>Giada De Laurentiis</author>  
+    <year>2005</year>  
+    <price>30.00</price>  
+  </book>  
+  <book category="CHILDREN">  
+    <title lang="en">Harry Potter</title>  
+    <author>J K. Rowling</author>  
+    <year>2005</year>  
+    <price>29.99</price>  
+  </book>  
+  <book category="WEB">  
+    <title lang="en">Learning XML</title>  
+    <author>Erik T. Ray</author>  
+    <year>2003</year>  
+    <price>39.95</price>  
+  </book>  
+</bookstore>  
+All elements in the document are contained within bookstore (3 book elements). The book element has 4 children: title, author, year and price.
+
+
+svg:
+is a way to define images instead of having a single file for it (jpeg, img, etc.). It is essentially html (svg uses xml) but for images instead text. the images created are based on vectors and can be rendered at any size without loss of quality.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  Sorry, your browser does not support inline SVG.  
+</svg> 
+ 
+</body>
+</html>
+this code creates a red circle 100 pixels wide and long. at a psoiton of x= 50 and y = 50 with a radius of 40p. is is encircled with a black line 3 pixels wide.
+
+yaml:
+Yaml used to create configuration files with any programming language. it creates file maps which contain the configuration information of other object or applications. even though in most cases it can be used interchangeably with json, yaml is considered more readable and user-friendly.
+
+---
+ doe: "a deer, a female deer"
+ ray: "a drop of golden sun"
+ pi: 3.14159
+ xmas: true
+ french-hens: 3
+ calling-birds:
+   - huey
+   - dewey
+   - louie
+   - fred
+ xmas-fifth-day:
+   calling-birds: four
+   french-hens: 3
+   golden-rings: 5
+   partridges:
+     count: 1
+     location: "a pear tree"
+   turtle-doves: two
+
+the three dashes start a yaml file. it can store from top to bottom: string, floating point numbers, boolean, arrays. xmas fifth day is an ellement which in it of itself contains multiple elements of multiple types.
